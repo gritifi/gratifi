@@ -115,7 +115,42 @@
       font-size: 0.9rem;
       color: #777;
     }
-  </style>
+  
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 1rem;
+      }
+
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .services ul {
+        flex-direction: column;
+      }
+
+      .services li {
+        flex: 1 1 100%;
+      }
+
+      .section {
+        padding: 3rem 1.5rem;
+      }
+
+      .contact-form input, .contact-form textarea {
+        width: 100%;
+      }
+    }
+</style>
 </head>
 <body>
   <header>
