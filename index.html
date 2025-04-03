@@ -151,6 +151,7 @@
       }
     }
 </style>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -162,20 +163,20 @@
     </nav>
   </header>
 
-  <section class="hero">
+  <section class="hero" data-aos="fade-up">
     <h1>Visual design that aligns with your brand’s soul.</h1>
     <p>Welcome to Gritifi – A creative studio crafting strategic, modern, and emotion-driven branding.</p>
     <a href="#contact" class="btn">Let’s Work Together</a>
   </section>
 
-  <section id="about" class="section">
+  <section id="about" class="section" data-aos="fade-up">
     <h2>About Gritifi</h2>
     <p>
       Gritifi is a design studio based in a small town with big ideas. Our mission is to create strategic and emotionally connected branding for people and businesses who value aesthetics and authenticity. We collaborate with local and international clients to shape identities that speak clearly and powerfully.
     </p>
   </section>
 
-  <section id="services" class="section services">
+  <section id="services" class="section services" data-aos="fade-up" data-aos-delay="100">
     <h2>Services</h2>
     <ul>
       <li><strong>Brand Identity Design</strong><br> Logos, typography, color palettes & more</li>
@@ -185,7 +186,7 @@
     </ul>
   </section>
 
-  <section id="contact" class="section">
+  <section id="contact" class="section" data-aos="fade-up" data-aos-delay="200">
     <h2>Contact</h2>
     <form class="contact-form" action="mailto:your@email.com" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
@@ -198,5 +199,13 @@
   <footer>
     © 2025 Gritifi Studio. Designed with heart.
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  </script>
 </body>
 </html>
